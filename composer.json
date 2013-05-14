@@ -1,0 +1,8 @@
+{
+    "name": "netzfabrik/flashhelper",
+    "description": "FlashMessenger View Helper",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*"
+    }
+}
