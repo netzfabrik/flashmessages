@@ -1,8 +1,16 @@
 {
     "name": "netzfabrik/flashhelper",
-    "description": "FlashMessenger View Helper",
+    "description": "FlashMessenger View Helper using Bootstrap classes",
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Flashhelper": "src/"
+        },
+        "classmap": [
+        	"./Module.php"
+        ]
     }
 }
