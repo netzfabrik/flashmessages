@@ -1,7 +1,7 @@
 <?php
 namespace Flashhelper;
 
-use Flashhelper\View\Helper\FlashMessages as ViewHelperFlashMessages;
+use Flashhelper\View\Helper\FlashMessages;
 
 class Module
 {
@@ -21,7 +21,7 @@ class Module
 		return array(
 			'factories'=> array(
 				'flashmessages' => function($sm) {
-					$helper = new ViewHelperFlashMessages();
+					$helper = new FlashMessages();
 					return $helper;
 				},
 			),
@@ -30,7 +30,7 @@ class Module
 
 	public function getConfig()
 	{
-		return include __DIR__ . '/config/module.config.php';
+		return array();
 	}
 
 }
